@@ -35,21 +35,24 @@
   grid-template-columns: 1fr;
   padding: 8rem 2rem 2rem;
   max-height: 100%;
-  overflow-y:auto;
   }
   
   .header {
-  display: grid;
-  grid-row: 1 / 2;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
-  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #F2F7FF;
   }
   
   .cards-header {
-    height:90%;
+    height: 80%;
+    width: 18%;
     background: #FFFFFF;
     border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .content {
@@ -78,8 +81,34 @@
     background: #FFFFFF;
     border-radius: 15px;
   }
-
-  .icon{ 
-    height: 20px;
-    color: black;
+  .icons-header{
+    font-size: 2.5em;
+    padding-right: 2rem;
   }
+  .profile-icon{
+    color: #9694FF;
+  }
+  .followers-icon{
+    color: #5DDAB4;
+  }
+  .following-icon{
+    color: #eb5790;
+  }
+  .saved-posts-icon{
+    color: #f36147;
+  }
+  
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #7C8DB5;
+    font-size: medium;
+    font-weight: 300;
+    padding-bottom: 0.3rem;
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    color: #312f2f;
+    font-weight: bold;
+    padding-top: 0.2rem;
+  }
+
