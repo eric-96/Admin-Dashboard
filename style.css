@@ -1,0 +1,85 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+  margin: 0;
+  overflow-y: auto;
+  background-color: #F2F7FF;
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  }
+  .sidebar {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    color: #7C8DB5  ;
+    padding: 8rem 3rem 2rem;
+    position: relative;
+  }
+  .sidebar-item {
+    padding: 0.5rem;
+  }
+  .second-ul{
+    padding: 3rem 0.5rem 0 0;
+  }
+  .main-content {
+  display: grid;
+  grid-template-rows: 2fr 8fr;
+  grid-template-columns: 1fr;
+  padding: 8rem 2rem 2rem;
+  max-height: 100%;
+  overflow-y:auto;
+  }
+  
+  .header {
+  display: grid;
+  grid-row: 1 / 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+  gap: 20px;
+  background-color: #F2F7FF;
+  }
+  
+  .cards-header {
+    height:90%;
+    background: #FFFFFF;
+    border-radius: 5%;
+  }
+
+  .content {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+    gap: 20px;
+  }
+
+  .big-card1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 4;
+    background: #FFFFFF;
+    border-radius: 15px;
+  }
+  .big-card2 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 4;
+    background: #FFFFFF;
+    border-radius: 15px;
+  }
+  .big-card3 {
+    grid-column: 1 / 6;
+    grid-row: 4 / 6;
+    background: #FFFFFF;
+    border-radius: 15px;
+  }
+
+  .icon{ 
+    height: 20px;
+    color: black;
+  }
