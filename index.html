@@ -4,61 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Supernova Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Tilt+Warp&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
         <div class="sidebar">
-            <ul class="sidebar-list">
-            <li class="sidebar-item">
-                <a href="index.html" class="sidebar-link"></a>
-                <i class="bi bi-stack"></i>
-                <span>Dashboard</span>
-            </li>    
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link"></a>
-                <i class="bi bi-person-circle"></i>
-                <span>Profile</span>
-            </li>    
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link"></a>
-                <i class="bi bi-clock-history"></i>
-                <span>History</span>
-            </li>    
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link"></a>
-                <i class="bi bi-check2-square"></i>
-                <span>Tasks</span>
-            </li>    
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link"></a>
-                <i class="bi bi-people-fill"></i>
-                <span>Communities</span>
-            </li>    
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link"></a>
-                <span>Communities</span>
-            </li>    
-            </ul>
-            <ul class="second-ul">
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link"></a>
-                    <i class="bi bi-gear-fill"></i>
-                    <span>Settings</span>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link"></a>
-                    <i class="bi bi-question-square-fill"></i>
-                    <span>Support</span>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link"></a>
-                    <i class="bi bi-shield-fill-check"></i>
-                    <span>Privacy</span>
-                </li>
-            </ul>
+
+            <div class="sidebar-container">
+
+                <div class="sidebar-brand-logo">
+                    <a> <img src="imgs/logo-no-background.png" alt="Supernova"> </a>
+                </div>
+
+                <ul class="sidebar-list">
+
+                    <li class="sidebar-item">
+                        <a href="index.html" class="sidebar-link"></a>
+                        <i class="bi bi-stack"></i>
+                        <p1>Dashboard</p1>
+                    </li>    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"></a>
+                        <i class="bi bi-person-circle sidebar-icons"></i>
+                        <p1>Profile</p1>
+                    </li>    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"></a>
+                        <i class="bi bi-clock-history sidebar-icons"></i>
+                        <p1>History</p1>
+                    </li>    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"></a>
+                        <i class="bi bi-check2-square sidebar-icons"></i>
+                        <p1>Tasks</p1>
+                    </li>    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"></a>
+                        <i class="bi bi-people-fill sidebar-icons"></i>
+                        <p1>Communities</p1>
+                    </li>    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"></a>
+                        <p1>Communities</p1>
+                    </li>    
+                    </ul>
+                    <ul class="second-ul">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link"></a>
+                            <i class="bi bi-gear-fill sidebar-icons"></i>
+                            <p1>Settings</p1>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link"></a>
+                            <i class="bi bi-question-square-fill sidebar-icons"></i>
+                            <p1>Support</p1>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link"></a>
+                            <i class="bi bi-shield-fill-check sidebar-icons"></i>
+                            <p1>Privacy</p1>
+                        </li>
+                    </ul>
+            </div>
         </div>
 
         <div class="main-content">
@@ -93,7 +105,11 @@
                 </header>
                 
                 <div class="content">
-                    <div class="big-card1">Profile Visit</div>
+                    <div class="big-card1">
+                        <h1>Profile Visit</h1>
+                        <canvas id="myChart" width="8" height="2"></canvas>
+                    </div>
+
                     <div class="big-card2">Recent Messages</div>
                     <div class="big-card3">Profile Visit</div>
                     <div class="big-card4">Latest Comments</div>
@@ -101,5 +117,7 @@
                 </div>
         </div>
     
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="app.js"></script>
 </body>
 </html>
