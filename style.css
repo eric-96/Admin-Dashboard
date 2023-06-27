@@ -31,7 +31,7 @@
     flex-direction: column;
     background: #FFFFFF;
     color: #7C8DB5  ;
-    padding: 3rem 3rem 2rem;
+    padding: 3rem 2rem 1rem;
     position: relative;
   }
   .sidebar-list{
@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 0.6em;
-    padding-top: 2  0%;
+    border-radius: 5%;
   }
 
   .sidebar-icons{
@@ -47,21 +47,31 @@
   }
 
   .sidebar-item {
-    padding: 0.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 5%;
+    cursor: pointer;
   }
   ul {
     list-style-type: none;
 }
   .second-ul{
-    padding: 3rem 0.5rem 0 0;
+    padding: 3rem 1.5rem 0.5rem 0rem;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  .sidebar-list :hover{
+    background-color: #e4e4ec;
+  }
+  .second-ul :hover {
+    background-color: #e4e4ec;
   }
   
+
   .main-content {
   display: grid;
   grid-template-rows: 2fr 8fr;
   grid-template-columns: 1fr;
   padding: 6rem 2rem 2rem;
-  max-height: 100%;
   }
   
   .header {
@@ -90,8 +100,10 @@
   .friend-profile-card {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding-left: 5%;
     padding-bottom: 5%;
+
   }
 
   .content {
@@ -107,6 +119,7 @@
     grid-row: 1 / 4;
     background: #FFFFFF;
     border-radius: 15px;
+    padding: 3%;
   }
   .big-card1 h1 {
     font-family: 'Nunito', 'sans-serif';
@@ -127,6 +140,7 @@
     grid-row: 4 / 6;
     background: #FFFFFF;
     border-radius: 15px;
+    padding: 3%
   }
   .icons-header{
     font-size: 2.5em;
@@ -154,6 +168,7 @@
   
   .name-display {
     padding-left: 8%;
+    width: 50%;
   }
   .name-display h1 {
     font-family: 'Nunito', 'sans-serif';
@@ -213,7 +228,9 @@
   }
 
   .send-message-btn{
-    display: inline-block;
+    width: 160%;
+    margin-left: 10%;
+    margin-top: 15%;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -225,3 +242,5 @@
     border-radius: 4px;
     cursor: pointer;
   }
+
+ 
