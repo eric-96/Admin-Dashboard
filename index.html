@@ -4,49 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <title>Supernova Dashboard</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Tilt+Warp&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.css" />
 </head>
 <body>
         <div class="sidebar">
 
             <div class="sidebar-container">
+                
+                <div class="sidebar-header">
 
-                <div class="sidebar-brand-logo">
-                    <a> <img src="imgs/logo-no-background.png" alt="Supernova" class="supernova-icon"> </a>
+                    <div class="sidebar-brand-logo">
+                        <a> <img src="imgs/supernova.png" alt="Supernova" class="supernova-icon"> </a>
+                    </div>
+
+                    <div class="menu-title">
+                        <p1>MENU</p1>
+                    </div>
+
                 </div>
-
                 <ul class="sidebar-list">
 
-                    <p1>Menu</p1>
 
                     <li class="sidebar-item">
-                        <a href="index.html" class="sidebar-link"></a>
                         <i class="bi bi-stack"></i>
                         <p1>Dashboard</p1>
                     </li>    
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"></a>
                         <i class="bi bi-person-circle sidebar-icons"></i>
                         <p1>Profile</p1>
                     </li>    
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"></a>
                         <i class="bi bi-clock-history sidebar-icons"></i>
                         <p1>History</p1>
                     </li>    
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"></a>
                         <i class="bi bi-check2-square sidebar-icons"></i>
                         <p1>Tasks</p1>
                     </li>    
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"></a>
                         <i class="bi bi-people-fill sidebar-icons"></i>
                         <p1>Communities</p1>
                     </li> 
@@ -54,17 +60,14 @@
                     </ul>
                     <ul class="second-ul">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"></a>
                             <i class="bi bi-gear-fill sidebar-icons"></i>
                             <p1>Settings</p1>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"></a>
                             <i class="bi bi-question-square-fill sidebar-icons"></i>
                             <p1>Support</p1>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"></a>
                             <i class="bi bi-shield-fill-check sidebar-icons"></i>
                             <p1>Privacy</p1>
                         </li>
@@ -74,7 +77,8 @@
 
         <div class="main-content">
             
-            <header class="header">
+                <header class="header">
+
                     <div class="cards-header">
 
                             <div class="icons-header profile-icon"><i class="bi bi-bullseye"></i></div>
@@ -106,8 +110,8 @@
                                 <h1>Eric Schwalb</h1>
                                 <p> @eric-96</p>
 
-                                </div>
-                        </div>
+                            </div>
+                    </div>
                   
 
                 </header>
@@ -116,7 +120,7 @@
 
                     <div class="big-card1">
 
-                        <h1>Profile Visit</h1>
+                        <h1>12 Month Profile Visits</h1>
                         <canvas id="myChart" width="8" height="2"></canvas>
 
                     </div>
@@ -165,13 +169,148 @@
                     </div>
                     
                     <div class="big-card3">
-                        <p1>Profile Visit</p1>
+
+                        <div class="card3-container">
+
+                            <div class="card3-header">
+                                <p1>Profile Visit</p1>
+                            </div>
+
+                        <div class="card3-body">
+
+                            <div class="row">
+                                <div class="chart-stats">
+                                    <div class="row-title"><p>USA</p></div>
+                                    <div class="row-number"><p>5500</p></div>
+                                </div>
+                                <div class="row-chart"> 
+                                    <div id="chart1"></div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="chart-stats">
+                                    <div class="row-title"><p>Brazil</p></div>
+                                    <div class="row-number"><p>4952</p></div>
+                                </div>
+                                <div class="row-chart">
+                                    <div id="chart2"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="chart-stats">
+                                    <div class="row-title"><p>Portugal</p></div>
+                                    <div class="row-number"><p>2912</p></div>
+                                </div>
+                                <div class="row-chart">
+                                    <div id="chart3"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
                     </div>
-                    <div class="big-card4">Latest Comments</div>
-                    <div class="big-card5">Visitors Profile</div>
+
+                    
                 </div>
+
+                <div class="big-card4">
+                    <div class="card4-container">
+                      <div class="card4-header">
+
+                        <h1>Latest Comments</h1>
+
+                      </div>
+                      <div class="card4-body">
+                        <table>
+                          <tr>
+                            <th>Name</th>
+                            <th>Comment</th>
+                          </tr>
+                          <tr>
+                            <td>
+                                <div class="friend-profile-card">
+
+                                    <div><img src="imgs/doodle5.png" alt="Profile Pic" class="profile-img"></div>
+                                    
+                                    <div class="name-display"> 
+                                            
+                                        <h1>John</h1>
+                                        <p>@johnprogrammer</p>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                              <div class="comment">
+                                <div class="comment-text">Great post! Keep it up!</div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <div class="friend-profile-card">
+
+                                    <div><img src="imgs/doodle6.png" alt="Profile Pic" class="profile-img"></div>
+                                    
+                                    <div class="name-display"> 
+
+                                        <h1>Rafaela</h1>
+                                        <p>@rafacodes</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="comment">
+                                <div class="comment-text">I totally agree with you.</div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <div class="friend-profile-card">
+
+                                    <div><img src="imgs/doodle4.png" alt="Profile Pic" class="profile-img"></div>
+                                    
+                                    <div class="name-display"> 
+                                            
+                                        <h1>Zé</h1>
+                                        <p>@zeisdeadbaby</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="comment">
+                                <div class="comment-text">Interesting perspective!</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <div class="big-card5">
+
+                    <div class="card-header">
+
+                            <h1>Visitors Profile</h1>
+                    </div>
+
+                      <div class="card-body">
+
+                        <div class="graph-container">
+
+                          <div id="chart4"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="app.js"></script>
 </body>
