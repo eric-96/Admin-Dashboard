@@ -151,15 +151,15 @@
   var options = {
     series: [50, 35, 15],
     chart: {
-      width: 380,
+      width: 300,
       type: 'donut',
     },
     labels: ['Devs', 'Recruiters', 'Users'],
     responsive: [{
-      breakpoint: 480,
+      breakpoint: 415,
       options: {
         chart: {
-          width: 100
+          width: 380
         },
         legend: {
           position: 'bottom'
